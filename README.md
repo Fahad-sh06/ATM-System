@@ -1,18 +1,45 @@
-ATM Simulation System 🏦💳
-This is a Java-based ATM Simulation System that replicates the core functionalities of an Automated Teller Machine (ATM). It is a beginner-friendly project designed to strengthen concepts of OOP (Object-Oriented Programming), user input handling, and basic transaction logic in Java.
+💳 ATM Management System
 
-Features:-
-    User Authentication (PIN-based login)
-    Check Account Balance
-    Cash Withdrawal
-    Cash Deposit
-    Exit/Logout functionality
+A simple ATM simulation project built in Java that allows users to perform basic banking operations like balance inquiry, deposit, withdrawal, and transfer.
 
-Tech Stack:-
-    Language: Java
-    Concepts Used: Classes, Objects, Switch Cases, Loops, Exception Handling
+📌 Features
+    🔑 User authentication with account number & PIN
+    💰 Check account balance
+    ➕ Deposit money
+    ➖ Withdraw money (with sufficient balance check)
+    🔄 Transfer money between accounts
+    🚪 Exit the system safely
 
-Learning Outcomes:-
-    Improved understanding of OOP principles
-    Handling user input and decision-making with control structures
-    Building real-world inspired console-based applications
+🛠️ Tech Stack
+Language: Java
+IDE: (Eclipse / IntelliJ / VS Code — add yours here)
+
+📂 Project Structure
+ATM-Project/
+│── src/
+│   ├── Main.java
+│   ├── ATM.java
+│   ├── Account.java
+│   └── (other classes if any)
+│
+└── README.md
+
+▶️ How to Run
+
+Clone this repository
+        - git clone https://github.com/your-username/atm-project.git
+Open the project in your Java IDE
+Compile and run the Main.java file
+Follow on-screen instructions
+
+🤝 Contributing
+Contributions are welcome!
+    Fork this repo
+    Create a new branch (feature-branch)
+    Commit your changes
+    Push and open a Pull Request
+
+👨‍💻 Author
+    - Fahad Shamshad
+    - fahads19080@gmail.com
+    - https://www.linkedin.com/in/fahad-shamshad/
