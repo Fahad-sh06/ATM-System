@@ -69,4 +69,15 @@ The **ATM Project** is a Java-based console application that uses **MySQL** as i
 - Add PIN-based login system for accounts  
 - Provide transaction history (mini statement)  
 - Support for interest calculation on savings accounts  
-- GUI-based implementation for better user experience  
+- GUI-based implementation for better user experience 
+
+
+## 📞 Contact
+
+For any questions or feedback regarding this project, feel free to reach out:  
+
+- **Name:** Fahad Shamshad  
+- **Email:** fahads19080@gmail.com  
+- **GitHub:** [github.com/Fahad-sh06](https://github.com/Fahad-sh06)  
+- **LinkedIn:** [linkedin.com/in/fahad-shamshad-8118ba312](https://www.linkedin.com/in/fahad-shamshad-8118ba312/)  
+
