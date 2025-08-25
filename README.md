@@ -1,45 +1,72 @@
-💳 ATM Management System
+# Online Banking System (ATM Project)
 
-A simple ATM simulation project built in Java that allows users to perform basic banking operations like balance inquiry, deposit, withdrawal, and transfer.
+The **ATM Project** is a Java-based console application that uses **MySQL** as its backend database. It provides essential features of an online banking system such as creating and updating accounts, handling deposits and withdrawals, and checking balances. The project is fully menu-driven and uses JDBC for database connectivity.
 
-📌 Features
-    🔑 User authentication with account number & PIN
-    💰 Check account balance
-    ➕ Deposit money
-    ➖ Withdraw money (with sufficient balance check)
-    🔄 Transfer money between accounts
-    🚪 Exit the system safely
+---
 
-🛠️ Tech Stack
-Language: Java
-IDE: (Eclipse / IntelliJ / VS Code — add yours here)
+## Features
 
-📂 Project Structure
-ATM-Project/
-│── src/
-│   ├── Main.java
-│   ├── ATM.java
-│   ├── Account.java
-│   └── (other classes if any)
-│
-└── README.md
+- **Account Management**
+  - Create a new account with details (Name, Age, Email, Mobile, City, Balance, Type)
+  - Update account details (Name, Age, Email, Mobile, City, Type)
+  - Delete an account
 
-▶️ How to Run
+- **Transaction Management**
+  - Withdraw money (validates insufficient funds)
+  - Credit (deposit) money to account
 
-Clone this repository
-        - git clone https://github.com/your-username/atm-project.git
-Open the project in your Java IDE
-Compile and run the Main.java file
-Follow on-screen instructions
+- **Account Information**
+  - Check account balance by ID
+  - View all account holders list with full details
 
-🤝 Contributing
-Contributions are welcome!
-    Fork this repo
-    Create a new branch (feature-branch)
-    Commit your changes
-    Push and open a Pull Request
+---
 
-👨‍💻 Author
-    - Fahad Shamshad
-    - fahads19080@gmail.com
-    - https://www.linkedin.com/in/fahad-shamshad/
+## Tech Stack
+
+- **Programming Language**: Java  
+- **Database**: MySQL  
+- **Connector**: JDBC  
+
+---
+
+## Database Structure
+
+### Data Table (`data`)
+| Column   | Type        | Description                  |
+|----------|-------------|------------------------------|
+| Acc_ID   | INT (PK, AI)| Unique account ID (starts 101)|
+| Name     | VARCHAR     | Account holder name          |
+| Age      | INT         | Account holder age           |
+| Email    | VARCHAR     | Account holder email         |
+| Mobile   | VARCHAR     | Account holder mobile number |
+| City     | VARCHAR     | Account holder city          |
+| Balance  | DOUBLE      | Current balance in account   |
+| Type     | VARCHAR     | Account type (Current/Savings)|
+
+---
+
+## How to Run
+
+1. Clone the repository or copy the source code.  
+2. Create a MySQL database named **ATM**.  
+3. Create the required table (`data`) using the schema above.  
+4. Update your MySQL credentials inside the code:  
+   ```java
+   Connection con = DriverManager.getConnection(
+       "jdbc:mysql://localhost:3306/ATM", "root", "your_password_here"
+   );
+   ```
+5. Compile and run the project:  
+   ```bash
+   javac Project_ATM.java
+   java Project_ATM
+   ```
+
+---
+
+## Future Enhancements
+
+- Add PIN-based login system for accounts  
+- Provide transaction history (mini statement)  
+- Support for interest calculation on savings accounts  
+- GUI-based implementation for better user experience  
